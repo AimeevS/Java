@@ -44,6 +44,7 @@ public class Show extends Applet {
         int weightValerie = 40;
         int weightJeroen = 100;
         int weightHans = 80;
+        int weightpon = 30;
 
         setBackground(Color.GRAY);
 
@@ -51,6 +52,7 @@ public class Show extends Applet {
         g.drawLine(39, 200, 250, 200);
 
         g.setColor(Color.PINK);
+
         g.fillRect(40, 200 - weightValerie, 40, weightValerie);
         g.drawString("Valerie", 40, 210);
         g.setColor(Color.GREEN);
@@ -58,7 +60,11 @@ public class Show extends Applet {
         g.drawString("Jeroen", 100, 210);
         g.setColor(Color.BLUE);
         g.fillRect(160, 200 - weightHans, 40, weightHans);
+
         g.drawString("Hans", 160, 210);
+        g.setColor(Color.yellow);
+        g.fillRect(260, 200 - weightpon, 40, weightpon);
+        g.drawString("pon", 260, 210);
 
         g.setColor(Color.black);
         g.drawString("100KG", 0, 100);
