@@ -14,18 +14,33 @@ public class Opdracht01 extends Applet {
     double secinday;
     double secinyear;
     double daysinyear;
+    double cijvereen;
+    double cijvertwe;
+    double cijverdrie;
+    double deler;
+    double gemmidelde;
     String tekst; //reeks van karakters, die tussen "" staat
     public void init(){
         numberOfFriends = 4;
         money= 113;
         moneyPerFriend= money/numberOfFriends;
+
         seconds= 60;
         minits = 60;
         secinhour = seconds*minits;
+
         hoursinday = 24;
         daysinyear = 365;
         secinday = secinhour*hoursinday;
         secinyear = secinday*daysinyear;
+
+        cijvereen =  5.9;
+        cijvertwe = 6.3;
+        cijverdrie = 6.9;
+        deler = 3;
+        gemmidelde = cijvereen+cijvertwe+cijverdrie/deler;
+
+
         tekst = "Hallo";
 
     }
@@ -38,6 +53,8 @@ public class Opdracht01 extends Applet {
         graph.drawString("seconds in a hour = "+secinhour, 25, 100);
         graph.drawString("seconds in a day = "+secinday, 25, 120);
         graph.drawString("seconds in a day = "+secinyear, 25, 140);
+
+        graph.drawString("het gemmidelde is = "+gemmidelde, 25, 170);
 
 
     }
